@@ -12,7 +12,7 @@ public class EvenOdd {
 		System.out.println();  
 		oddNumbers(input);  //calls the method oddNumbers
 	}
-	public static void evenNumbers(int n){
+	public static int evenNumbers(int n){
 		System.out.println("The even numbers are"+" ");
 		for(int i=1;i<=n;i++){    //for loop to iterate the i value from 1 to 50
 			if(i%2==0){			   //if statement to check if number is even
@@ -21,9 +21,10 @@ public class EvenOdd {
 			}
 				
 		}
+		return n;
 	
 	}
-	public static void oddNumbers(int n){
+	public static int oddNumbers(int n){
 		System.out.println("The odd numbers are"+" ");
 		for(int i=1;i<=n;i++){    //for loop to iterate the i value from 1 to 50
 			if(i%2==1){            //if statement to check if number is odd
@@ -31,5 +32,7 @@ public class EvenOdd {
 			}
 		
 	}
+		return n;
 }
+	
 }
