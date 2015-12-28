@@ -1,4 +1,6 @@
 package com.digitek.formulas;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class EvenOdd {
@@ -12,27 +14,29 @@ public class EvenOdd {
 		System.out.println();  
 		oddNumbers(input);  //calls the method oddNumbers
 	}
-	public static int evenNumbers(int n){
+	public static ArrayList<Integer> evenNumbers(int n){   //method to find odd numbers with return type arrayList
 		System.out.println("The even numbers are"+" ");
-		for(int i=1;i<=n;i++){    //for loop to iterate the i value from 1 to 50
+		List<Integer> myList = new ArrayList<Integer>();    //initializing a integer arrayList
+		for(int i=1;i<=n;i++){ //for loop to iterate the i value from 1 to n
 			if(i%2==0){			   //if statement to check if number is even
-				
-				System.out.print(i+",");  //if the statement is true it will print the value i
+				myList.add(i);  //if the statement is true it will add the value i to the list myList
 			}
-				
 		}
-		return n;
+		System.out.println(myList);		//it will print the elements in myList
+		return (ArrayList<Integer>) myList;  //gives myList as the return type when this method is called
 	
 	}
-	public static int oddNumbers(int n){
+	public static ArrayList<Integer> oddNumbers(int n){  //method to find odd numbers with return type arrayList
 		System.out.println("The odd numbers are"+" ");
-		for(int i=1;i<=n;i++){    //for loop to iterate the i value from 1 to 50
+		List<Integer> myList = new ArrayList<Integer>();  //initializing a integer arrayList
+		for(int i=1;i<=n;i++){    //for loop to iterate the i value from 1 to n
 			if(i%2==1){            //if statement to check if number is odd
-				System.out.print(i+",");  //if the statement is true it will print the value i
+				myList.add(i);  //if the statement is true it will add the value i to the list myList
 			}
 		
 	}
-		return n;
+		System.out.println(myList);	//it will print the elements in myList
+		return (ArrayList<Integer>) myList; //gives myList as the return type when this method is called
 }
 	
 }
