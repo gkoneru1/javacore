@@ -13,7 +13,7 @@ public class EvenOddTest {
 	}
    public void testoddNumbers(){
 	   EvenOdd eo= new EvenOdd();
-	   int oddnum= eo.oddNumbers(9);
+	   int oddnum= eo.oddNumbers(81);
 	   Assert.assertEquals(81, oddnum);
    }
 }
